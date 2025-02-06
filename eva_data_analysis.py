@@ -96,16 +96,17 @@ def plot_cumulative_time_in_space(df, graph_file):
 
 # Main code
 
-print("--START--")
+if __name__ == "__main__":
+    print("--START--")
 
-input_file = open('./eva-data.json', 'r')
-output_file = open('./eva-data.csv', 'w')
-graph_file = './cumulative_eva_graph.png'
+    input_file = open('./eva_data.json', 'r', encoding='utf-8')
+    output_file = open('./eva_data.csv', 'w', encoding='utf-8')
+    graph_file = './cumulative_eva_graph.png'
 
-eva_data = read_json_to_dataframe(input_file)
+    eva_data = read_json_to_dataframe(input_file)
 
-write_dataframe_to_csv(eva_data, output_file)
+    write_dataframe_to_csv(eva_data, output_file)
 
-plot_cumulative_time_in_space(eva_data, graph_file)
+    plot_cumulative_time_in_space(eva_data, graph_file)
 
-print("--END--")
+    print("--END--")
