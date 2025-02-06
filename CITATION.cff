@@ -11,7 +11,7 @@ authors:
   - given-names: Elias
     family-names: Korchi Meziani
 repository-code: >-
-  https://github.com/elioe300/spacewalks.gits
+  https://github.com/elioe300/spacewalks
 abstract: >-
   A Python script to analyse NASA extravehicular activity
   data
